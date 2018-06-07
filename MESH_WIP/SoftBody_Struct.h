@@ -2,7 +2,7 @@
 #define _SOFTBODY_STRUCT_H
 
 
-#include "All_Includes.h"
+#include "GLIncludes.h"
 
 
 //A struct for 1D Mass-Spring softbody physics

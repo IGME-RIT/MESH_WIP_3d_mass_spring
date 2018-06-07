@@ -1,7 +1,7 @@
 #ifndef _RIGIDBODY_STRUCT_H
 #define _RIGIDBODY_STRUCT_H
 
-#include "All_Includes.h"
+#include "GLIncludes.h"
 
 
 //Struct for rigidbody kinematics

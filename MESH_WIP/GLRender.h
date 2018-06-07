@@ -1,9 +1,7 @@
-
-
 #ifndef _GL_RENDER_H
 #define _GL_RENDER_H
 
-#include "All_Includes.h"
+#include "GLIncludes.h"
 
 #define PI 3.14159265
 #define DIVISIONS  40
@@ -22,6 +20,10 @@ GLuint fragment_shader;
 // This is a reference to your uniform MVP matrix in your vertex shader
 GLuint uniMVP;
 GLuint color;
+GLuint uniHue;
+
+// This is a matrix to be sent to the shaders which can control global hue alteration
+glm::mat4 hue;
 
 glm::mat4 view;
 glm::mat4 proj;
@@ -294,6 +296,7 @@ void cleanup()
 
 // This function runs every frame
 
+/*
 void renderScene()
 {
 	// Clear the color buffer and the depth buffer
@@ -307,6 +310,7 @@ void renderScene()
 
 
 }
+*/
 
 //Generic function that renders an object with MVP and base varaibles
 template<class T>

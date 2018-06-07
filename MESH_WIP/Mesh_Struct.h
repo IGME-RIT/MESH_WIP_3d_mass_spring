@@ -2,7 +2,7 @@
 #define _MESH_STRUCT_H
 
 
-#include "All_Includes.h"
+#include "GLRender.h"
 
 
 //Struct for rendering
@@ -86,7 +86,7 @@ struct Mesh
 	void Mesh::Draw(void)
 	{
 		//GEnerate the MVP for this model
-		glm::mat4 MVP = VP * this->GetModelMatrix();
+		glm::mat4 MVP = PV * this->GetModelMatrix();
 
 		//Bind the VAO being drawn
 		glBindVertexArray(this->VAO);

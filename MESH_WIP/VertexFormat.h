@@ -1,7 +1,7 @@
 #ifndef _VERTEXFORMAT_H
 #define _VERTEXFORMAT_H
 
-#include "All_Includes.h"
+#include "GLIncludes.h"
 
 // We create a VertexFormat struct, which defines how the data passed into the shader code wil be formatted
 struct VertexFormat
